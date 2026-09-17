@@ -13,6 +13,7 @@ Changes from original:
 - Added [Insignia for Xbox](https://insignia.live/)
   - Requires aditional steps
 - Added Monster Hunter Old School domains.
+- From october 2026 I won't mention specific domains that get removed or change, just more general changes. Commit history is available of course
 
 # Usage
 
@@ -22,7 +23,7 @@ This list includes:
 - [WiiLink](https://wiilink.ca/) (previously RiiConnect24)
 - [Monster Hunter Old School](https://mholdschool.com/)
 
-AFAIK it doesn't break modern services as their domains are either dead or unused
+AFAIK it doesn't break modern services as their domains are either dead or unused. If they do please notify me to set them up like Insignia's
 
 ### Instalation
 
@@ -47,5 +48,16 @@ Some of the domains do clash with modern Xbox services, so additional steps are 
 
 - For some reason I couldn't make it work on Technitium DNS
 - This is a little less reasonable than setting those domains to be forwarded to their specific service DNS server  
-- [Wii Link's dns zones](https://github.com/WiiLink24/DNS-Server/blob/master/dns_zones-hosts.txt)  
-- I think I should take a look at the scripts again, also for AAAA/IPv6 records... Oct '26 when I'm writing this
+- I think I should take a look at the scripts again, also for AAAA/IPv6 records... Oct '26 when I'm writing this  
+- Repo has been renamed from `Linx-ESP/RiiConnect24-DNS-Server` but anything pointing to it will keep working as this is how GitHub works thankfully. Change done to not keep RiiConnect's name from forking.  
+  
+## Why do I do it this way?
+  
+Why do I check again their servers and not copy from their provided lists ([WiiLink](https://github.com/WiiLink24/DNS-Server) | [Monster Hunter Old School](https://github.com/MH-Oldschool/mhosdns) | [Insignia](https://github.com/insignia-live/insigniaDNS)):  
+- There were domains from RiiConnect that don't appear anymore on the WiiLink repo that they still resolve   
+- Some of the WiiLink provided domains are (or were) not modified from normal upstream DNS servers  
+- Some of the WiiLink provided domains are (or were) not resolved by their own DNS server  
+- I will contact them or do a PR about it to them but still, I prefer to query their own DNS server and compare against Cloudflare's for unchanged ones  
+- I think it will be easier to CI/CD with GitHub actions... Of course I haven't done it so whatever.  
+  
+

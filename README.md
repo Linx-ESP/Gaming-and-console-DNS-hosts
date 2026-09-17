@@ -1,4 +1,4 @@
-# FORK
+## Derived from the RiiConnect (now WiiLink) DNS repo
 
 Changes from original:
 
@@ -46,4 +46,6 @@ Some of the domains do clash with modern Xbox services, so additional steps are 
 # Additional info
 
 - For some reason I couldn't make it work on Technitium DNS
-- This is a little less reasonable than setting those domains to be resolved in their specific service DNS server
+- This is a little less reasonable than setting those domains to be forwarded to their specific service DNS server  
+- [Wii Link's dns zones](https://github.com/WiiLink24/DNS-Server/blob/master/dns_zones-hosts.txt)  
+- I think I should take a look at the scripts again, also for AAAA/IPv6 records... Oct '26 when I'm writing this

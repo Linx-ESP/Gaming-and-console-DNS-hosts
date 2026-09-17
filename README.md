@@ -14,12 +14,13 @@ Changes from original:
   - Requires aditional steps
 - Added Monster Hunter Old School domains.
 - From october 2026 I won't mention specific domains that get removed or change, just more general changes. Commit history is available of course
+- Joined Insignia list since it only applies to devices tagged in a particular way
 
 # Usage
 
-## General list
+## General
 
-This list includes:
+This includes:
 - [WiiLink](https://wiilink.ca/) (previously RiiConnect24)
 - [Monster Hunter Old School](https://mholdschool.com/)
 
@@ -28,24 +29,26 @@ AFAIK it doesn't break modern services as their domains are either dead or unuse
 ### Instalation
 
 - Adguard Home WebGUI > Blocklists > Add list > Add custom list
-  - URL: ```https://raw.githubusercontent.com/Linx-ESP/RiiConnect24-DNS-Server/refs/heads/clean/adguardhome-dnsrewrite.txt```
+  - URL: ```https://raw.githubusercontent.com/Linx-ESP/Gaming-and-console-DNS-hosts/refs/heads/clean/adguardhome-dnsrewrite.txt```
 - Settings > DNS Settings > Blocking mode
   - Default (Needed for domains to be rewritten and not just blocked)
 
-## Insignia list
+## Insignia
 
-This list includes:
+This adds:
 - [Insignia for Xbox](https://insignia.live/)
 
 Some of the domains do clash with modern Xbox services, so additional steps are needed:
 
-- Add the blocklist. URL: ```https://raw.githubusercontent.com/Linx-ESP/RiiConnect24-DNS-Server/refs/heads/clean/adguardhome-insignia.txt```
+- Add the blocklist. URL: ```https://raw.githubusercontent.com/Linx-ESP/Gaming-and-console-DNS-hosts/refs/heads/clean/adguardhome-dnsrewrite.txt```
 - Settings > Client settings:
   - Add your Xbox console (either IP, MAC... doesn't matter) and name it as 'ogxbox'
-  - The list is made so it only applies to clients with that name
+  - This way only applies to clients with that name since those domains are still in use
 
 # Additional info
 
+- `adguardhome-insignia.txt` is kept for compatibility, is integrated in `adguardhome-dnsrewrite.txt`
+- `dns_zones-hosts.txt` doesn't have Insignia, I don't use pihole so I don't know if there is an equivalent option to apply to specific clients like adguard
 - For some reason I couldn't make it work on Technitium DNS
 - This is a little less reasonable than setting those domains to be forwarded to their specific service DNS server  
 - I think I should take a look at the scripts again, also for AAAA/IPv6 records... Oct '26 when I'm writing this  

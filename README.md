@@ -56,11 +56,12 @@ Some of the domains do clash with modern Xbox services, so additional steps are 
   
 ## Why do I do it this way?
   
-Why do I check again their servers and not copy from their provided lists ([WiiLink](https://github.com/WiiLink24/DNS-Server) | [Monster Hunter Old School](https://github.com/MH-Oldschool/mhosdns) | [Insignia](https://github.com/insignia-live/insigniaDNS)):  
+Why do I check again their servers and not copy from their provided lists ([WiiLink](https://github.com/WiiLink24/DNS-Server) | [Monster Hunter Old School](https://github.com/MH-Oldschool/mhosdns) | [Insignia](https://insignia.live/dns_zones.json)):  
 - There were domains from RiiConnect that don't appear anymore on the WiiLink repo that they still resolve   
 - Some of the WiiLink provided domains are (or were) not modified from normal upstream DNS servers  
 - Some of the WiiLink provided domains are (or were) not resolved by their own DNS server  
 - I will contact them or do a PR about it to them but still, I prefer to query their own DNS server and compare against Cloudflare's for unchanged ones  
 - I think it will be easier to CI/CD with GitHub actions... Of course I haven't done it so whatever.  
+- For Insignia I do use their provided ones since they use CNAMEs so probably not need to update ever
   
 

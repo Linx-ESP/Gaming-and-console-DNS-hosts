@@ -45,18 +45,18 @@
 ||*.dnas.playstation.org^$dnsrewrite=NOERROR;A;34.75.107.68
 ||*.kddi-mmbb.jp^$dnsrewrite=NOERROR;A;151.80.238.101
 ||corsair.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
-||skyhawk.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
-||viper.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
 ||crusader.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
-||raptor.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
-||strike-raptor.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
 ||goshawk.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.104
-||spector.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.104
 ||meteor.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.104
+||raptor.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
+||skyhawk.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
+||spector.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.104
+||strike-raptor.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
+||viper.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.99
 ||voodoo.capcom.co.jp^$dnsrewrite=NOERROR;A;151.80.238.104
 # Insignia for xbox
 # You MUST name the client on Adguard Home as "ogxbox" 
-||macs.xboxlive.com^$client=ogxbox,dnsrewrite=NOERROR;CNAME;macs.insig.uk
 ||as.xboxlive.com^$client=ogxbox,dnsrewrite=NOERROR;CNAME;as.insig.uk
+||macs.xboxlive.com^$client=ogxbox,dnsrewrite=NOERROR;CNAME;macs.insig.uk
 ||tgs.xboxlive.com^$client=ogxbox,dnsrewrite=NOERROR;CNAME;tgs.insig.uk
 ||xds.xboxlive.com^$client=ogxbox,dnsrewrite=NOERROR;CNAME;xexds.insig.uk
